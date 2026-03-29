@@ -29,6 +29,13 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://upeu-infra.github.io/ariel/en/financiamiento/"/>
     </url>
     <url>
+        <loc>https://upeu-infra.github.io/ariel/implementacion-aws/</loc>
+        <lastmod>2026-03-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://upeu-infra.github.io/ariel/implementacion-aws/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://upeu-infra.github.io/ariel/en/implementacion-aws/"/>
+    </url>
+    <url>
         <loc>https://upeu-infra.github.io/ariel/literatura/</loc>
         <lastmod>2026-03-29</lastmod>
         <changefreq>daily</changefreq>
@@ -76,6 +83,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://upeu-infra.github.io/ariel/en/financiamiento/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://upeu-infra.github.io/ariel/financiamiento/"/>
+    </url>
+    <url>
+        <loc>https://upeu-infra.github.io/ariel/en/implementacion-aws/</loc>
+        <lastmod>2026-03-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://upeu-infra.github.io/ariel/en/implementacion-aws/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://upeu-infra.github.io/ariel/implementacion-aws/"/>
     </url>
     <url>
         <loc>https://upeu-infra.github.io/ariel/en/literatura/</loc>

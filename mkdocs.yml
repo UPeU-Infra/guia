@@ -100,6 +100,7 @@ extra:
 nav:
   - Inicio: index.md
   - Propuesta Ejecutiva: propuesta-ejecutiva.md
+  - Plan Operativo: plan-operativo.md
   - Arquitectura: arquitectura.md
   - Financiamiento: financiamiento.md
   - Literatura: literatura.md

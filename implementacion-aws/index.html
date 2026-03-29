@@ -779,10 +779,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#opcion-a-arielacademy-13ano-fase-1-recomendado" class="md-nav__link">
+  <a href="#fase-1-arielscibackcom-subdominio-sciback-disponible-de-inmediato" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Opción A — ariel.academy ($13/año) — Fase 1 recomendado
+        Fase 1 — ariel.sciback.com (subdominio SciBack, disponible de inmediato)
       
     </span>
   </a>
@@ -790,10 +790,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#opcion-b-subdominio-iasd-ideal-fase-2" class="md-nav__link">
+  <a href="#fase-2-subdominio-iasd-cuando-haya-endorsement" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Opción B — Subdominio IASD (ideal Fase 2+)
+        Fase 2+ — Subdominio IASD (cuando haya endorsement)
       
     </span>
   </a>
@@ -1238,10 +1238,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#opcion-a-arielacademy-13ano-fase-1-recomendado" class="md-nav__link">
+  <a href="#fase-1-arielscibackcom-subdominio-sciback-disponible-de-inmediato" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Opción A — ariel.academy ($13/año) — Fase 1 recomendado
+        Fase 1 — ariel.sciback.com (subdominio SciBack, disponible de inmediato)
       
     </span>
   </a>
@@ -1249,10 +1249,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#opcion-b-subdominio-iasd-ideal-fase-2" class="md-nav__link">
+  <a href="#fase-2-subdominio-iasd-cuando-haya-endorsement" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Opción B — Subdominio IASD (ideal Fase 2+)
+        Fase 2+ — Subdominio IASD (cuando haya endorsement)
       
     </span>
   </a>
@@ -1580,7 +1580,7 @@ CloudFront elimina la ventaja de latencia de sa-east-1 para los visitantes web. 
 <tr>
 <td><strong>Route 53</strong></td>
 <td>Zona hosteada (si dominio propio)</td>
-<td>Opcional en Fase 1 si se usa ariel.academy</td>
+<td>Opcional en Fase 1 si se usa ariel.sciback.com</td>
 </tr>
 <tr>
 <td><strong>CloudWatch</strong></td>
@@ -1656,14 +1656,13 @@ CloudFront elimina la ventaja de latencia de sa-east-1 para los visitantes web. 
 </table>
 <hr />
 <h2 id="stack-docker-compose-inveniordm-fase-1">Stack Docker Compose — InvenioRDM Fase 1</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ariel-hub/
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── docker-compose.yml        ← stack principal
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├── docker-compose.override.yml ← overrides locales (no commiteado)
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>├── .env                      ← secretos (DB pass, SECRET_KEY, S3 keys)
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>├── nginx/
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>│   └── ariel.conf            ← reverse proxy + SSL
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>└── invenio.cfg               ← configuración InvenioRDM
-</code></pre></div>
+<p><code>ariel-hub/
+├── docker-compose.yml        ← stack principal
+├── docker-compose.override.yml ← overrides locales (no commiteado)
+├── .env                      ← secretos (DB pass, SECRET_KEY, S3 keys)
+├── nginx/
+│   └── ariel.conf            ← reverse proxy + SSL
+└── invenio.cfg               ← configuración InvenioRDM</code></p>
 <pre class="mermaid"><code>graph LR
     subgraph compose["Docker Compose — ariel-hub"]
         NGINX["nginx:alpine\n:80 → :443\nreverse proxy + SSL"]
@@ -1689,10 +1688,9 @@ CloudFront elimina la ventaja de latencia de sa-east-1 para los visitantes web. 
 <hr />
 <h2 id="networking-y-seguridad">Networking y seguridad</h2>
 <h3 id="vpc-ariel-hub">VPC ariel-hub</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>VPC: 10.0.0.0/16
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  Subred pública:  10.0.1.0/24  (EC2, Elastic IP)
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  Subred privada:  10.0.2.0/24  (futura RDS si se migra)
-</code></pre></div>
+<p><code>VPC: 10.0.0.0/16
+  Subred pública:  10.0.1.0/24  (EC2, Elastic IP)
+  Subred privada:  10.0.2.0/24  (futura RDS si se migra)</code></p>
 <h3 id="security-group-ariel-sg">Security Group ariel-sg</h3>
 <table>
 <thead>
@@ -1764,15 +1762,13 @@ CloudFront elimina la ventaja de latencia de sa-east-1 para los visitantes web. 
 <p><strong>Beneficio clave:</strong> un usuario en Kenia o Indonesia accede al portal ARIEL desde el edge node más cercano, no desde Virginia. La cosecha OAI-PMH (máquina a máquina) va directo al EC2.</p>
 <hr />
 <h2 id="dns-y-dominio">DNS y dominio</h2>
-<h3 id="opcion-a-arielacademy-13ano-fase-1-recomendado">Opción A — ariel.academy ($13/año) — Fase 1 recomendado</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>ariel.academy         → CloudFront distribution (CNAME)
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>www.ariel.academy     → redirect a ariel.academy
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>oai.ariel.academy     → EC2 Elastic IP directo (sin CDN — para harvesters)
-</code></pre></div>
-<h3 id="opcion-b-subdominio-iasd-ideal-fase-2">Opción B — Subdominio IASD (ideal Fase 2+)</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>ariel.adventist.org   → CloudFront (pendiente endorsement CG)
-</code></pre></div>
-<p><strong>Recomendación:</strong> adquirir <code>ariel.academy</code> ya para Fase 1. Costo mínimo, nombre profesional, no depende de endorsement institucional todavía. Migrar a subdominio IASD cuando haya endorsement formal de la Conferencia General.</p>
+<h3 id="fase-1-arielscibackcom-subdominio-sciback-disponible-de-inmediato">Fase 1 — ariel.sciback.com (subdominio SciBack, disponible de inmediato)</h3>
+<p><code>ariel.sciback.com     → CloudFront distribution (CNAME)
+oai.ariel.sciback.com → EC2 Elastic IP directo (sin CDN — para harvesters)</code></p>
+<p>No requiere adquirir dominio nuevo — <code>sciback.com</code> ya es de Alberto. Listo para usar.</p>
+<h3 id="fase-2-subdominio-iasd-cuando-haya-endorsement">Fase 2+ — Subdominio IASD (cuando haya endorsement)</h3>
+<p><code>ariel.adventist.org   → CloudFront (pendiente endorsement Conferencia General)</code></p>
+<p><strong>Estrategia:</strong> arrancar en <code>ariel.sciback.com</code> para Fase 1 (piloto SAD). Migrar a subdominio IASD cuando la División o la Conferencia General endorse el proyecto formalmente.</p>
 <hr />
 <h2 id="backup-y-recuperacion">Backup y recuperación</h2>
 <h3 id="estrategia">Estrategia</h3>
@@ -1917,7 +1913,7 @@ CloudFront elimina la ventaja de latencia de sa-east-1 para los visitantes web. 
 <h2 id="checklist-de-despliegue-fase-1">Checklist de despliegue — Fase 1</h2>
 <h3 id="pre-despliegue">Pre-despliegue</h3>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Adquirir dominio <code>ariel.academy</code> (Namecheap / Route 53)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Adquirir dominio <code>ariel.sciback.com</code> (Namecheap / Route 53)</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Crear cuenta AWS dedicada <code>ariel-hub</code> (separar de cuentas SciBack/UPeU)</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Configurar IAM: usuario <code>ariel-deploy</code>, role <code>ariel-ec2-role</code></li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Crear bucket S3 <code>ariel-assets</code> con versionado activado</li>
@@ -1939,8 +1935,8 @@ CloudFront elimina la ventaja de latencia de sa-east-1 para los visitantes web. 
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <code>docker compose up -d</code></li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <code>invenio db init &amp;&amp; invenio db create</code></li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <code>invenio index init</code></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Configurar Nginx + Certbot para <code>ariel.academy</code></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Verificar endpoint OAI-PMH: <code>https://ariel.academy/oai2d?verb=Identify</code></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Configurar Nginx + Certbot para <code>ariel.sciback.com</code></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Verificar endpoint OAI-PMH: <code>https://ariel.sciback.com/oai2d?verb=Identify</code></li>
 </ul>
 <h3 id="harvesting">Harvesting</h3>
 <ul class="task-list">
@@ -1953,8 +1949,8 @@ CloudFront elimina la ventaja de latencia de sa-east-1 para los visitantes web. 
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Crear distribución CloudFront apuntando al EC2</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Configurar certificado SSL en ACM (o usar el de Certbot)</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Actualizar DNS: <code>ariel.academy → CloudFront</code></li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <code>oai.ariel.academy → Elastic IP</code> (directo, sin CDN)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Actualizar DNS: <code>ariel.sciback.com → CloudFront</code></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <code>oai.ariel.sciback.com → Elastic IP</code> (directo, sin CDN)</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Verificar tiempos de respuesta desde distintas regiones</li>
 </ul>
 <h3 id="monitoreo">Monitoreo</h3>
@@ -1967,18 +1963,17 @@ CloudFront elimina la ventaja de latencia de sa-east-1 para los visitantes web. 
 <hr />
 <h2 id="repo-de-infraestructura">Repo de infraestructura</h2>
 <p>El código de infraestructura (docker-compose, nginx config, scripts de backup) vive en un repo separado:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>github.com/UPeU-Infra/ariel-infra   (privado)
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>├── docker-compose.yml
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>├── docker-compose.prod.yml
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>├── nginx/
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>│   └── ariel.conf
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>├── scripts/
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>│   ├── 01-install-docker.sh
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>│   ├── 02-setup-invenio.sh
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>│   ├── 03-setup-ssl.sh
-<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>│   └── 04-setup-backups.sh
-<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>└── .env.example                    ← template sin secretos
-</code></pre></div>
+<p><code>github.com/UPeU-Infra/ariel-infra   (privado)
+├── docker-compose.yml
+├── docker-compose.prod.yml
+├── nginx/
+│   └── ariel.conf
+├── scripts/
+│   ├── 01-install-docker.sh
+│   ├── 02-setup-invenio.sh
+│   ├── 03-setup-ssl.sh
+│   └── 04-setup-backups.sh
+└── .env.example                    ← template sin secretos</code></p>
 <p>Separado del repo <code>ariel</code> (documentación/sitio web) para mantener la infra versionada independientemente.</p>
 
 

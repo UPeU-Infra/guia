@@ -2,6 +2,9 @@
 
 ## ARIEL — Adventist Repository for Institutional and Educational Literature
 
+!!! note "Sobre el nombre"
+    **ARIEL** es un nombre propio que no se traduce. El acrónimo en inglés es la forma oficial para todas las regiones, igual que OpenAIRE o ALICIA. En cada idioma el significado puede interpretarse localmente, pero el nombre del proyecto es siempre **ARIEL**.
+
 **Versión:** 1.0 — Marzo 2026
 **Institución proponente:** Universidad Peruana Unión (UPeU)
 **Socios estratégicos:** IATec · División Sudamericana (SAD)

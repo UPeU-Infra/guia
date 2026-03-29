@@ -1,10 +1,12 @@
-# ARIEL Network
+# ARIEL
 
 <div class="hero" markdown>
 
 ## Adventist Repository for Institutional and Educational Literature
 
-*Red Científica Adventista — Acceso abierto al conocimiento generado por las universidades e institutos de la Iglesia Adventista del Séptimo Día*
+*Red global de repositorios científicos de las universidades e institutos de la Iglesia Adventista del Séptimo Día*
+
+> **ARIEL** es un nombre propio — no se traduce. En español puede leerse como *"Repositorio Adventista de Investigación y Educación en Literatura"*, aunque el significado varía según el idioma de cada región. Como ocurre con OpenAIRE o ALICIA, el acrónimo es universal.
 
 </div>
 

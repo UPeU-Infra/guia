@@ -6,7 +6,8 @@
 
 **Nombre:** ARIEL es nombre propio — no se traduce. El acrónimo es universal como OpenAIRE o ALICIA.
 **Fundamento bíblico:** Isaías 29:18 — "En aquel día los sordos oirán las palabras del libro..."
-**Dominio objetivo:** pendiente — posible subdominio IASD oficial. Opción de respaldo: ariel.academy ($13/año). ariel.network está en venta.
+**Dominio Fase 1:** ariel.sciback.com (subdominio SciBack, disponible de inmediato, sin costo adicional)
+**Dominio objetivo:** subdominio IASD oficial — la División posiblemente lo asigne cuando endorse el proyecto.
 **Sitio web:** https://upeu-infra.github.io/ariel/
 **Repo GitHub:** https://github.com/UPeU-Infra/ariel
 
@@ -51,7 +52,8 @@
 - Reunión con IATec — confirmar rol tecnológico
 - Endorsement formal División Sudamericana
 - Inventario universidades SAD con DSpace/OJS activos
-- Adquirir dominio (evaluar subdominio IASD vs ariel.academy)
+- Configurar subdominio ariel.sciback.com (DNS en sciback.com — Fase 1)
+- Negociar subdominio IASD oficial con la División (Fase 2+)
 - Aplicar WillPlan MIF — deadline 1 mayo **2027** (UPeU como solicitante)
 - Preparar concept note IOI Fund — convocatoria 2026–2027
 - Registrar ARIEL en OpenDOAR como red

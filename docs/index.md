@@ -52,7 +52,7 @@ graph TD
 ```mermaid
 graph BT
     A["🏛️ DSpace / OJS\nen cada universidad adventista"] --> B["🌎 Redes nacionales\nALICIA · BDTD · SNRD · RRAAE"]
-    B --> C["⭐ HUB ARIEL\nariel.network"]
+    B --> C["⭐ HUB ARIEL\nariel.sciback.com"]
     C --> D["🌍 LA Referencia\nRed LATAM"]
     D --> E["🌐 OpenAIRE · BASE · CORE\nOpenAlex · Google Scholar"]
 

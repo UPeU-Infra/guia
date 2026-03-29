@@ -84,7 +84,7 @@ CloudFront elimina la ventaja de latencia de sa-east-1 para los visitantes web. 
 | **Elastic IP** | 1 IP estática | DNS apunta aquí; no cambia entre reboots |
 | **S3** | Bucket `ariel-assets` | PDFs de tesis (uploads), backups PostgreSQL, logs archivados |
 | **CloudFront** | Distribution sobre EIP | SSL global, caché de assets estáticos, geo-acceleration |
-| **Route 53** | Zona hosteada (si dominio propio) | Opcional en Fase 1 si se usa ariel.academy |
+| **Route 53** | Zona hosteada (si dominio propio) | Opcional en Fase 1 si se usa ariel.sciback.com |
 | **CloudWatch** | Logs + alarmas básicas | Disco >80%, CPU >85%, instancia caída |
 | **IAM** | Role `ariel-ec2-role` | Permisos mínimos: s3:PutObject, s3:GetObject al bucket propio |
 
@@ -207,21 +207,22 @@ flowchart LR
 
 ## DNS y dominio
 
-### Opción A — ariel.academy ($13/año) — Fase 1 recomendado
+### Fase 1 — ariel.sciback.com (subdominio SciBack, disponible de inmediato)
 
 ```
-ariel.academy         → CloudFront distribution (CNAME)
-www.ariel.academy     → redirect a ariel.academy
-oai.ariel.academy     → EC2 Elastic IP directo (sin CDN — para harvesters)
+ariel.sciback.com     → CloudFront distribution (CNAME)
+oai.ariel.sciback.com → EC2 Elastic IP directo (sin CDN — para harvesters)
 ```
 
-### Opción B — Subdominio IASD (ideal Fase 2+)
+No requiere adquirir dominio nuevo — `sciback.com` ya es de Alberto. Listo para usar.
+
+### Fase 2+ — Subdominio IASD (cuando haya endorsement)
 
 ```
-ariel.adventist.org   → CloudFront (pendiente endorsement CG)
+ariel.adventist.org   → CloudFront (pendiente endorsement Conferencia General)
 ```
 
-**Recomendación:** adquirir `ariel.academy` ya para Fase 1. Costo mínimo, nombre profesional, no depende de endorsement institucional todavía. Migrar a subdominio IASD cuando haya endorsement formal de la Conferencia General.
+**Estrategia:** arrancar en `ariel.sciback.com` para Fase 1 (piloto SAD). Migrar a subdominio IASD cuando la División o la Conferencia General endorse el proyecto formalmente.
 
 ---
 
@@ -287,7 +288,7 @@ flowchart LR
 ## Checklist de despliegue — Fase 1
 
 ### Pre-despliegue
-- [ ] Adquirir dominio `ariel.academy` (Namecheap / Route 53)
+- [ ] Adquirir dominio `ariel.sciback.com` (Namecheap / Route 53)
 - [ ] Crear cuenta AWS dedicada `ariel-hub` (separar de cuentas SciBack/UPeU)
 - [ ] Configurar IAM: usuario `ariel-deploy`, role `ariel-ec2-role`
 - [ ] Crear bucket S3 `ariel-assets` con versionado activado
@@ -307,8 +308,8 @@ flowchart LR
 - [ ] `docker compose up -d`
 - [ ] `invenio db init && invenio db create`
 - [ ] `invenio index init`
-- [ ] Configurar Nginx + Certbot para `ariel.academy`
-- [ ] Verificar endpoint OAI-PMH: `https://ariel.academy/oai2d?verb=Identify`
+- [ ] Configurar Nginx + Certbot para `ariel.sciback.com`
+- [ ] Verificar endpoint OAI-PMH: `https://ariel.sciback.com/oai2d?verb=Identify`
 
 ### Harvesting
 - [ ] Registrar primer nodo: DSpace UPeU
@@ -319,8 +320,8 @@ flowchart LR
 ### CloudFront y DNS
 - [ ] Crear distribución CloudFront apuntando al EC2
 - [ ] Configurar certificado SSL en ACM (o usar el de Certbot)
-- [ ] Actualizar DNS: `ariel.academy → CloudFront`
-- [ ] `oai.ariel.academy → Elastic IP` (directo, sin CDN)
+- [ ] Actualizar DNS: `ariel.sciback.com → CloudFront`
+- [ ] `oai.ariel.sciback.com → Elastic IP` (directo, sin CDN)
 - [ ] Verificar tiempos de respuesta desde distintas regiones
 
 ### Monitoreo

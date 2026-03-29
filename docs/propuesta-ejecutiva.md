@@ -80,7 +80,7 @@ xychart-beta
 
 ```mermaid
 graph TD
-    HUB["⭐ HUB ARIEL\nariel.network"]
+    HUB["⭐ HUB ARIEL\nariel.sciback.com"]
 
     DSpace["📚 DSpace\nRepositorios institucionales\nTesis · Artículos · Reportes"]
     OJS["📰 OJS\nRevistas académicas\nadventistas"]
@@ -218,7 +218,7 @@ graph TD
 
 ## 7. Próximos pasos inmediatos
 
-- [x] Nombre y dominio objetivo: **ariel.network**
+- [x] Nombre y dominio objetivo: **ariel.sciback.com**
 - [x] Revisión de literatura — brecha documentada
 - [x] Arquitectura técnica definida
 - [ ] Reunión con DTI UPeU — presentar propuesta
@@ -228,7 +228,7 @@ graph TD
 - [ ] Aplicar WillPlan Mission Impact Fund (deadline 1 mayo 2027)
 - [ ] Preparar concept note para IOI Fund (convocatoria 2026–2027)
 - [ ] Registrar ARIEL en OpenDOAR como red
-- [ ] Adquirir dominio ariel.network
+- [ ] Adquirir dominio ariel.sciback.com
 
 [:fontawesome-solid-arrow-right: Ver Financiamiento](financiamiento.md){ .md-button .md-button--primary }
 [:fontawesome-solid-arrow-right: Ver Arquitectura Técnica](arquitectura.md){ .md-button }

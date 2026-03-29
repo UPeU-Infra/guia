@@ -61,7 +61,7 @@ Currently **10 of the 20 top users** of Andrews University's Digital Commons are
 
 ```mermaid
 graph TD
-    HUB["⭐ ARIEL HUB\nariel.network"]
+    HUB["⭐ ARIEL HUB\nariel.sciback.com"]
 
     DSpace["📚 DSpace\nInstitutional repositories\nTheses · Articles · Reports"]
     OJS["📰 OJS\nAcademic journals\npublished by Adventist institutions"]
@@ -154,7 +154,7 @@ graph TD
 
 ## 6. Next immediate steps
 
-- [x] Name and target domain: **ariel.network**
+- [x] Name and target domain: **ariel.sciback.com**
 - [x] Literature review — gap documented
 - [x] Technical architecture defined
 - [ ] Meeting with UPeU — present proposal
@@ -164,7 +164,7 @@ graph TD
 - [ ] Apply WillPlan Mission Impact Fund (deadline May 1, 2027)
 - [ ] Prepare IOI Fund concept note (2026–2027 call)
 - [ ] Register ARIEL in OpenDOAR as a network
-- [ ] Acquire ariel.network domain
+- [ ] Acquire ariel.sciback.com domain
 
 [:fontawesome-solid-arrow-right: Funding](funding.md){ .md-button .md-button--primary }
 [:fontawesome-solid-arrow-right: Architecture](architecture.md){ .md-button }

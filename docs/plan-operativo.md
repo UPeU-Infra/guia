@@ -33,7 +33,7 @@ Fase 3 → Consolidación global (2028+)
 | 0.2 | Obtener carta de endorsement institucional UPeU | Alberto + DTI | Mayo 2026 | ⬜ Pendiente |
 | 0.3 | Reunión con contacto IATec Perú — confirmar rol tecnológico | Alberto | Mayo 2026 | ⬜ Pendiente |
 | 0.4 | Reunión con contacto SAD — presentar propuesta a División Sudamericana | Alberto | Junio 2026 | ⬜ Pendiente |
-| 0.5 | Adquirir dominio (evaluar subdominio IASD vs ariel.academy) | Alberto | Abril 2026 | ⬜ Pendiente |
+| 0.5 | Adquirir dominio (evaluar subdominio IASD vs ariel.sciback.com) | Alberto | Abril 2026 | ⬜ Pendiente |
 | 0.6 | Inventario: universidades SAD con DSpace/OJS activos | Alberto + IATec | Junio 2026 | ⬜ Pendiente |
 | 0.7 | Definir modelo de gobernanza provisional ARIEL | Alberto | Junio 2026 | ⬜ Pendiente |
 
@@ -146,7 +146,7 @@ graph LR
 | IATec no confirma rol tecnológico | Media | Alto | SciBack puede operar el hub sin IATec en Fase 1 |
 | WillPlan no aprueba la aplicación | Media | Alto | IOI Fund como alternativa; piloto reduce el riesgo |
 | Universidad piloto no tiene DSpace activo | Media | Medio | UPeU ya tiene DSpace activo — empezar con 1 es suficiente |
-| Dominio IASD no disponible | Baja | Bajo | ariel.academy como respaldo ($13/año) |
+| Dominio IASD no disponible | Baja | Bajo | ariel.sciback.com como respaldo ($13/año) |
 | DSpace 10 no madura para Fase 2 | Media | Bajo | InvenioRDM escala bien — no hay urgencia de migrar |
 | Falta de capacidad técnica en universidades nodo | Alta | Medio | Protocolo de onboarding (entregable 1.7) + soporte IATec |
 

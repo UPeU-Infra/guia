@@ -23,7 +23,7 @@ El nombre tiene raíz bíblica sólida. **Ariel** (אֲרִיאֵל) aparece 6 v
 
 La conexión con un repositorio académico de acceso abierto es genuina, no forzada: el instrumento de restauración en ese capítulo es explícitamente **el libro** — el conocimiento hecho accesible.
 
-**Dominio objetivo:** `ariel.network` — actualmente en venta en Dan.com (~$500–$5,000 USD). El TLD `.network` es aceptado por todos los agregadores académicos (OpenAIRE, LA Referencia, BASE, OpenDOAR) — el protocolo OAI-PMH no tiene restricciones de TLD.
+**Dominio objetivo:** `ariel.sciback.com` — actualmente en venta en Dan.com (~$500–$5,000 USD). El TLD `.network` es aceptado por todos los agregadores académicos (OpenAIRE, LA Referencia, BASE, OpenDOAR) — el protocolo OAI-PMH no tiene restricciones de TLD.
 
 **Por qué no ARIA:** WAI-ARIA es un estándar técnico del W3C para accesibilidad web, ampliamente conocido en IT. Generaría confusión crónica en conversaciones técnicas.
 
@@ -109,7 +109,7 @@ La **Universidad Peruana Unión (UPeU)** es la institución proponente por:
 - [ ] Reunión con IATec — confirmar rol tecnológico y posible infraestructura
 - [ ] Endorsement formal División Sudamericana
 - [ ] Inventario de universidades SAD con DSpace/OJS activos
-- [ ] Adquirir dominio `ariel.network`
+- [ ] Adquirir dominio `ariel.sciback.com`
 - [ ] Aplicar WillPlan MIF 2027 (deadline 1 mayo 2027)
 - [ ] Preparar concept note IOI Fund
 - [ ] Registrar ARIEL en OpenDOAR como red
